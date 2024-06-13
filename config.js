@@ -32,11 +32,11 @@ if (process.env.MAIL_SOLUTION === "smtp") {
     module.exports.mailParams = {
         host: process.env.SMTP_HOST,
         port: parseInt(process.env.SMTP_PORT),
-        // secure: true,
-        auth: {
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASSWORD,
-        },
+        secure: false,
+//        auth: {
+//            user: process.env.SMTP_USER,
+//            pass: process.env.SMTP_PASSWORD,
+//        },
     };
 } else if (process.env.MAIL_SOLUTION === "mailgun") {
     module.exports.mailParams = {

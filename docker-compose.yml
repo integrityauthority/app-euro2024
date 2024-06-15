@@ -12,7 +12,7 @@ services:
         - caddy_data:/data
         - caddy_config:/config
         - $PWD/eb.crt.pem:/etc/caddy/eb.crt.pem
-        - $PWM/eb.key.pem:/etc/caddy/eb.key.pem
+        - $PWD/eb.key.pem:/etc/caddy/eb.key.pem
         networks:
         - proxy
     web:

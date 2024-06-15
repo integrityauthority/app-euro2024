@@ -1,7 +1,5 @@
-www.wetten2024.de {
-    reverse_proxy web:8080   
+eb.iharena.hu {
+    tls /etc/caddy/eb.crt.pem /etc/caddy/eb.key.pem
+    reverse_proxy web:8080
 }
 
-wetten2024.de {
-    redir https://www.wetten2024.de{uri}
-}
